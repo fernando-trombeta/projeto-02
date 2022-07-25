@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+
+  font-family: 'Open Sans', sans-serif;
+
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 82.08%,
+    rgba(227, 255, 248, 0.38) 100%
+  );
+
+  min-height: 100vh; /* irá ocupar 100% do ViewPort Heigth (tela) */
+}
+
+.page {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+nav {
+  display: flex; /* coloca os items lado a lado*/
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 55px;
+}
+
+ul {
+  display: flex;
+  gap: 48px; /* gap = espaço */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Mulish', sans-serif;
+}
+
+ul li a {
+  color: #1f1534;
+  text-decoration: none; /* remover o sub-linhado*/
+
+  opacity: 0.5; /* 0 = ver nada e 1 = ver tudo */
+}
+
+ul li a:hover {
+  font-weight: bold; /* : é pseudo-class, hover (passar o mouse em cima) fica negrito*/
+  opacity: 1;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'Mulish', sans-serif;
+
+  font-size: 49px;
+  line-height: 56px;
+  color: #000000;
+
+  font-weight: normal;
+
+  width: 490px;
+}
+
+h1 span {
+  color: #89c5cc;
+  font-weight: bold;
+}
+
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7987;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 0;
+  margin-right: 0; /* poderia substituir tudo por margin: 40px 0; */
+}
+
+button {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+
+  background: #69b99d;
+  border: 0; /* 0 ou none */
+  padding: 14px 32px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 4px;
+
+  cursor: pointer; /* seta vira mãozinha no cursor */
+}
+
+button:hover {
+  background: #47b48e;
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+  color: #000000;
+
+  text-align: center;
+  margin-top: 80px;
+}
+
+footer a {
+  font-weight: bold;
+  color: #000000;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
